@@ -1,0 +1,242 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1073018260668290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4367482479342220}
+  - component: {fileID: 114614678581283286}
+  - component: {fileID: 114170864265234944}
+  m_Layer: 0
+  m_Name: Game Over
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4367482479342220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073018260668290}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.89, z: -0.83}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4445329232558800}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &114614678581283286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073018260668290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1453746f3dc4a749a077b803b729872, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DirectChildObject: {fileID: 1404187846893026}
+  Animation:
+    Animation: {fileID: 114273593525608562, guid: 8492d7e31845c434599ce875e6c05a03,
+      type: 3}
+    Time: 2
+    Mode: 0
+  StartDelay: 0
+  Repeat: 1
+--- !u!114 &114170864265234944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073018260668290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c5557b9660d2f4394fcccb5872a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestoryTime: 12
+--- !u!1 &1404187846893026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4445329232558800}
+  - component: {fileID: 114273138213978386}
+  - component: {fileID: 114175070273045382}
+  - component: {fileID: 114203469911194824}
+  - component: {fileID: 114285741155077210}
+  m_Layer: 0
+  m_Name: TextElement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4445329232558800
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404187846893026}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4367482479342220}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114273138213978386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404187846893026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1daa46b093d67b440b92b0e6669845a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  font3d: {fileID: 11400000, guid: 8259328f1a76efd43bb4f9341c3acf9d, type: 2}
+  text: 'Game
+
+    Over'
+  fontSize: 0.7
+  lineGapMultiplier: 0.52
+  spaceMultipler: 0.96
+  textWrap:
+    enableWrap: 1
+    lineSpan: 5
+  alignment: 4
+  FaceMaterial: {fileID: 2100000, guid: 0fee84eacba67cd498595ae068e6998f, type: 2}
+  SideMaterial: {fileID: 2100000, guid: 0fee84eacba67cd498595ae068e6998f, type: 2}
+  LetterPrefab: {fileID: 33977933773262148, guid: 3e7fe675151a9ed429e3b56d2c2de636,
+    type: 3}
+  OnGlyphClicked:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &114175070273045382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404187846893026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f12ef12f208c2d1428663b991a7a5d1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InsertAnimation:
+    Animation: {fileID: 114273593525608562, guid: 4a2c261d4c6f3cb4f9bd34861f6e5944,
+      type: 3}
+    Time: 0
+    Mode: 0
+  DeleteAnimation:
+    Animation: {fileID: 0}
+    Time: 0
+    Mode: 0
+  MoveTime: 0
+  MoveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &114203469911194824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404187846893026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bb497fdb0ad3c94e89b0f74fc6888b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimationStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  AnimationEnded:
+    m_PersistentCalls:
+      m_Calls: []
+  AnimateOnStart: 1
+  OverrideAnimation: 1
+  WaveType: 0
+  GlyphGapTime: 0.1
+  WordPauseTime: 0
+  PauseTime: 0
+  AnimationStartDelay: 0
+  AnimationPresets:
+  - Animation: {fileID: 114273593525608562, guid: 7889cdaeb4ac1d443aa7eb4f92d34828,
+      type: 3}
+    Time: 4
+    Mode: 0
+  AnimationSelectMethod: 0
+--- !u!114 &114285741155077210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404187846893026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bb497fdb0ad3c94e89b0f74fc6888b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimationStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  AnimationEnded:
+    m_PersistentCalls:
+      m_Calls: []
+  AnimateOnStart: 1
+  OverrideAnimation: 1
+  WaveType: 1
+  GlyphGapTime: 0.1
+  WordPauseTime: 0
+  PauseTime: 0
+  AnimationStartDelay: 6
+  AnimationPresets:
+  - Animation: {fileID: 114273593525608562, guid: 6e7068d9d6e12b04c830493d9e903a2a,
+      type: 3}
+    Time: 4
+    Mode: 0
+  AnimationSelectMethod: 0

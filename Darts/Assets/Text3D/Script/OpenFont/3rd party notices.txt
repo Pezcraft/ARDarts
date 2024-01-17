@@ -1,0 +1,11 @@
+These are the 3rd party notices for https://github.com/LayoutFarm/Typography/tree/master/Typography.OpenFont:
+
+MIT, 2016-2017, WinterDev, https://github.com/LayoutFarm/Typography
+
+Apache2, 2014-2016, Samuel Carlsson, https://github.com/vidstige/NRasterizer
+
+MIT, 2015, Michael Popoloski MIT, https://github.com/MikePopoloski/SharpFont
+
+The FreeType Project LICENSE (3-clauses BSD style),2003-2016, David Turner, Robert Wilhelm, and Werner Lemberg and others, https://www.freetype.org/
+
+Apache2, 2018, Apache/PDFBox Authors, https://github.com/apache/pdfbox

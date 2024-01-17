@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="tarmac" size="0.030000 0.029829" />
+    <ImageTarget name="karte" size="0.054000 0.084315" />
+    <ImageTarget name="dartboard" size="0.451000 0.453706" />
+  </Tracking>
+</QCARConfig>

@@ -32,8 +32,6 @@ public class DartboardManager : MonoBehaviour {
     private int throwsPerTurn = 3;
     private int currentThrow = 1; // current throw for the current turn
 
-    private int playerThrowCount = -1;
-    private int playerTurnCount = -1;
     private int playerScore = -1;
     private DartboardThrowInfo lastThrowInfo;
     
@@ -47,16 +45,12 @@ public class DartboardManager : MonoBehaviour {
         }
 
         currentThrow = 1;
-
         playerScore = 0;
-        playerThrowCount = 0;
-        playerTurnCount = 0;
-
         gameOver = false;
         playerScore = startingScore;
+        
         GameState = DartGameStates.Playing;
         TriggerGameEvent(DartGameEvents.GameStart);
-
         StartTurn();
     }
 
@@ -72,7 +66,6 @@ public class DartboardManager : MonoBehaviour {
     
     private void StartTurn() {
         currentThrow = 1;
-        playerTurnCount += 1;
         scoreAtStartOfTurn = playerScore;
         TriggerGameEvent(DartGameEvents.StartTurn);
         StartThrow();
@@ -111,7 +104,6 @@ public class DartboardManager : MonoBehaviour {
     public void RegisterHit(DartboardThrowInfo hitInfo) {
         if (GameState == DartGameStates.Playing) {
             lastThrowInfo = hitInfo;
-            playerThrowCount += 1;
 
             Hit(hitInfo);
             TriggerGameEvent(DartGameEvents.Hit);
@@ -140,8 +132,6 @@ public class DartboardManager : MonoBehaviour {
     public void RegisterMiss() {
         if (GameState == DartGameStates.Playing) {
             lastThrowInfo = new DartboardThrowInfo(DartSectionTypes.Miss, 0);
-            playerThrowCount += 1;
-
             EndThrow();
             TriggerGameEvent(DartGameEvents.Miss);
         }

@@ -32,7 +32,7 @@ public class Dart : MonoBehaviour {
                     if (!RayHit.transform.GetComponent<Collider>().isTrigger) {
                         DartboardDivider divider = RayHit.transform.GetComponent<DartboardDivider>();
                         if (divider != null) {
-                            // if we hit a divider, we want to move the dart slightly to the left or right
+                            // if we hit a divider, we want to move the dart slightly to a random direction
                             var rando = Random.insideUnitCircle;
                             var adjustd = new Vector3(rando.x, rando.y, 0) * 0.2f;
                             transform.position += adjustd;
